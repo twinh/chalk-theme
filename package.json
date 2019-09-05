@@ -19,7 +19,7 @@
     "url": "git+https://github.com/twinh/chalk-theme.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest"
   },
   "dependencies": {
     "chalk": "^2.0.0"
