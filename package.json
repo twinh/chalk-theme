@@ -10,15 +10,16 @@
   "author": "twinh <twinhuang@qq.com>",
   "homepage": "https://github.com/twinh/chalk-theme#readme",
   "license": "MIT",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "files": [
-    "index.ts"
+    "dist"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/twinh/chalk-theme.git"
   },
   "scripts": {
+    "prepare": "tsc",
     "test": "jest"
   },
   "dependencies": {
