@@ -19,8 +19,10 @@
     "url": "git+https://github.com/twinh/chalk-theme.git"
   },
   "scripts": {
-    "prepare": "tsc",
-    "test": "jest"
+    "build": "tsc",
+    "clean": "rimraf dist coverage",
+    "test": "jest",
+    "prepare": "yarn build"
   },
   "dependencies": {
     "chalk": "^2.0.0"
@@ -29,6 +31,7 @@
     "@types/jest": "^24.0.18",
     "coveralls": "^3.0.6",
     "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.3"
   }
