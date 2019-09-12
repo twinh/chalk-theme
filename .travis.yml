@@ -4,6 +4,17 @@ node_js:
   - '12'
   - '10'
 
+cache: yarn
+
+before_install:
+  - npx replace-pkg-dep
+
+install:
+  - yarn install
+
+before_script:
+  - yarn clean
+
 script:
   - jest --coverage --coverageReporters text lcovonly
 
