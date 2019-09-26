@@ -1,15 +1,16 @@
 import theme from '..';
+import stripAnsi from 'strip-ansi';
 
 describe('cli theme', () => {
   it('info theme', () => {
-    expect(theme.info('1')).toBe('[32m1[39m');
+    expect(stripAnsi(theme.info('1'))).toBe('1');
   });
 
   it('warning theme', () => {
-    expect(theme.warning('1')).toBe('[33m1[39m');
+    expect(stripAnsi(theme.warning('1'))).toBe('1');
   });
 
   it('error theme', () => {
-    expect(theme.error('1')).toBe('[31m1[39m');
+    expect(stripAnsi(theme.error('1'))).toBe('1');
   });
 });
