@@ -23,7 +23,8 @@ jobs:
         run: |
           npx replace-pkg-dep
 
-      - name: yarn install and test
+      - name: yarn install, lint and test
         run: |
           yarn install
+          yarn lint
           yarn test

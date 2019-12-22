@@ -1,5 +1,5 @@
-import theme from '..';
 import stripAnsi from 'strip-ansi';
+import theme from '..';
 
 describe('cli theme', () => {
   it('info theme', () => {
